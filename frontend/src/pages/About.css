@@ -1,0 +1,221 @@
+/* src/styles/About.css */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #0f172a; /* slate-900 */
+  color: #f8fafc; /* slate-50 */
+  min-height: 100vh;
+}
+
+.about-content {
+  max-width: 1000px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #38bdf8; /* sky-400 */
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #cbd5e1; /* slate-300 */
+}
+
+.about-image {
+  margin: 2rem 0;
+}
+
+.about-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+}
+
+.resume-btn {
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #0ea5e9; /* sky-500 */
+}
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+
+/* Email */
+.email-button {
+  background-color: #10b981; /* Emerald */
+  color: #f1f5f9;
+}
+
+/* Phone */
+.phone-button {
+  background-color: #f59e0b; /* Amber */
+  color: #f1f5f9;
+}
+
+/* LinkedIn */
+.linkedin-button {
+  background-color: #0a66c2;
+  color: #f1f5f9;
+}
+
+/* Common Button Styles */
+.email-button,
+.phone-button,
+.linkedin-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+/* Hover Effects */
+
+.email-button:hover {
+  background-color: #059669;
+}
+
+.phone-button:hover {
+  background-color: #d97706;
+}
+
+.linkedin-button:hover {
+  background-color: #004182;
+}
+
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #E2E8F0;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.intro-text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to bottom, #4F46E5, #EC4899);
+  border-radius: 3px;
+}
+
+.name-highlight {
+  color: #93C5FD;
+  font-weight: 600;
+  position: relative;
+}
+
+.highlight {
+  color: #60A5FA;
+  font-weight: 500;
+}
+
+.line-break {
+  display: block;
+  height: 0.8rem;
+}
+
+/* For better mobile alignment */
+@media (max-width: 768px) {
+  .intro-text {
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.current-focus {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #E2E8F0;
+  position: relative;
+  padding-left: 1.8rem;
+  margin: 1.5rem 0;
+}
+
+.current-focus::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #4F46E5;
+  font-size: 1.2rem;
+}
+
+.highlight {
+  color: #93C5FD;
+  font-weight: 500;
+  position: relative;
+}
+
+.project-emphasis {
+  font-style: normal;
+  color: #60A5FA;
+  font-weight: 500;
+  position: relative;
+}
+
+.project-emphasis::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #4F46E5, transparent);
+  transition: all 0.3s ease;
+}
+
+.project-emphasis:hover::after {
+  background: linear-gradient(90deg, #EC4899, transparent);
+}
+
+.animated-ellipsis {
+  display: inline-block;
+  width: 0.8em;
+  text-align: left;
+}
+
+.animated-ellipsis::after {
+  content: "...";
+  animation: ellipsis-anim 1.5s infinite steps(4);
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+@keyframes ellipsis-anim {
+  0% { content: ""; }
+  25% { content: "."; }
+  50% { content: ".."; }
+  75% { content: "..."; }
+}
