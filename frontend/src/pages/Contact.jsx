@@ -74,7 +74,7 @@ function Contact() {
           </div>
 
           <a
-            href="/myresume.pdf" 
+            href="/Piyush_Resume.pdf" 
             download
             className="inline-block mt-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition"
           >
