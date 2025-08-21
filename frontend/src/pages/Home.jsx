@@ -106,7 +106,7 @@ function Home() {
 
         {/* Resume Download */}
         <motion.a
-          href="/myresume.pdf" // put your resume inside "public/" folder
+          href="/Piyush_Resume.pdf" // put your resume inside "public/" folder
           download
           className="inline-flex items-center gap-2 px-6 py-3 border border-blue-500 text-blue-500 rounded-full hover:bg-blue-600 hover:text-white transition"
           initial={{ opacity: 0 }}
