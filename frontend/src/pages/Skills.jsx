@@ -90,7 +90,7 @@ function Skills() {
         {/* CTA Button */}
         <div className="text-center mt-10">
           <a
-            href="/myresume.pdf"
+            href="/Piyush_Resume.pdf"
             download
             className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full transition"
           >
